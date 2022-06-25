@@ -7,8 +7,11 @@ const formSchema = yup.object().shape({
 
   email: yup
     .string()
+    .trim()
     .email("Must be a valid email address")
     .required("Email is required"),
+
+  password: yup.string().trim().required("Password is required"),
 
   ToS_agreed: yup
     .bool()

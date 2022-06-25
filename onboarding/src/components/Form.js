@@ -65,7 +65,7 @@ const Form = (props) => {
           onChange={onChange}
         />
       </label>
-      <input type="submit" value="Submit" disabled={disabled} />
+      <input type="submit" id="submitBtn" value="Submit" disabled={disabled} />
     </form>
   );
 };
